@@ -40,3 +40,7 @@ code(){
         cd ~/code/
     fi
 }
+
+allports(){
+    sudo netstat -plnt
+}
