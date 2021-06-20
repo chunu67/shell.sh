@@ -40,3 +40,16 @@ code(){
         cd ~/code/
     fi
 }
+
+
+worddir=~/wordlist
+
+wordlist(){
+        find "${worddir}" -type f -iname "${1}"
+
+}
+
+
+dirsearch(){
+        python3 ~/tools/dirsearch/dirsearch.py -u $1 -e $2  --markdown-report=${1}-out.md
+}
